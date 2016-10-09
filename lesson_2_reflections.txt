@@ -16,3 +16,10 @@ part of a commit and hence can be changed. Also, staging area allows
 changes to several files to be grouped together and tied to a common
 description of the change.
 
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Inspect the changes to ensure that all changes are related to the logical change and
+there are no changes that not related to the logical change. git diff --stage can
+help.
