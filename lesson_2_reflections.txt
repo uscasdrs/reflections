@@ -1,0 +1,18 @@
+What happens when you initialize a repository? Why do you need to do that?
+
+When 'git init' is run in a directory, all meta data files of a
+repository are created. This is needed so that subsequent commits
+can be performed successfully. 
+
+
+
+
+How is staging area different from working directory and repository?
+What value do you think it offers?
+
+Staging area can be used to temporarily group together the changes that
+will form a part of commit. Changes saved in staging area are not yet
+part of a commit and hence can be changed. Also, staging area allows
+changes to several files to be grouped together and tied to a common
+description of the change.
+
