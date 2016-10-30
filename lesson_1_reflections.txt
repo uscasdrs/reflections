@@ -1,70 +1,52 @@
-How did viewing a diff between two versions of a file help you see the bug that was introduced?
-
-It showed only the lines that changed and suppressed the lines that did not change.
-When a line changed, it showed both the old version of the line and the new version of the line.
-These two lines were displayed one below the other, making it easy for the eye to see differences.
-
-
-
-How couuld having easy access to the entire history of a file make you more efficient programmer in the long term?
-
-It is easy to revert back to an older version if needed.
-Older versions keep track of decisions that were made early; these decisions might have changed in subsequent versions.
+Q: How did viewing a diff between two versions of a file help you see the bug that was introduced?
+A: It showed only the lines that changed and suppressed the lines that did not change.
+   When a line changed, it showed both the old version of the line and the new version of the line.
+   These two lines were displayed one below the other, making it easy for the eye to see differences.
 
 
 
-What do you think are the pros and cons of manually choosing when to create a commit, like 
-you do in Git, vs having versions automatically saved, like Google Docs does?
-
-manual commit
-- pros
-  - versions can make logical sense, since the user selects when to perform commit
-  - not too many versions are created - reducing clutter
-  - storage need is minimized, as useless intermediate versions are not created and stored
-- cons
-  - could lose lots of work when a crash happens
-  - user might forget to commit at suitable points
-
-automatic commit
-- pros
-  - loss of work is minimized
-- cons
-  - some versions will have incomplete changes
-  - too many versions leads to clutter in history
-  - too many versions leads to increased storage requirement
+Q: How couuld having easy access to the entire history of a file make you more efficient programmer in the long term?
+A: It is easy to revert back to an older version if needed.
+   Older versions keep track of decisions that were made early; these decisions might have changed in subsequent versions.
 
 
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like 
+   you do in Git, vs having versions automatically saved, like Google Docs does?
+A: manual commit
+   - pros
+     - versions can make logical sense, since the user selects when to perform commit
+     - not too many versions are created - reducing clutter
+     - storage need is minimized, as useless intermediate versions are not created and stored
+   - cons
+     - could lose lots of work when a crash happens
+     - user might forget to commit at suitable points
+
+   automatic commit
+   - pros
+     - loss of work is minimized
+   - cons
+     - some versions will have incomplete changes
+     - too many versions leads to clutter in history
+     - too many versions leads to increased storage requirement
 
 
-Why do you think some version control systems, like Git, allow saving multiple files
-in one commit, while others, like Google Docs, treat each file separately?
-
-The users for these two version control systems have different needs.
-Treating each file separately is lot simpler than saving multiple files in a commit.
-The storage need could be marginally larger when multiple files are saved in a commit.
-
+Q: Why do you think some version control systems, like Git, allow saving multiple files
+   in one commit, while others, like Google Docs, treat each file separately?
+A: The users for these two version control systems have different needs.
+   Treating each file separately is lot simpler than saving multiple files in a commit.
+   The storage need could be marginally larger when multiple files are saved in a commit.
 
 
-
-How can you use the commands git log and git diff to view the 
-history of files?
-
-
-
+Q: How can you use the commands git log and git diff to view the history of files?
+A: git log gives information about the versions of a file that are committed. It also
+   gives the list of files that are modified in a commit.
+   git diff gives the differences between two versions of a file. 
 
 
-How might using version control make you more confident 
-to make changes that could break something?
-
-The differences between two commits is known precisely.
-If something breaks in new version, we can experiment and find the culprit.
+Q: How might using version control make you more confident to make changes that could break something?
+A: The differences between two commits is known precisely.
+   If something breaks in new version, we can experiment and find the culprit.
 
 
-
-
-
-Now that you have your workspace set up, what do you want
-to try using Git for?
-
-
-
+Q: Now that you have your workspace set up, what do you want to try using Git for?
+A: 

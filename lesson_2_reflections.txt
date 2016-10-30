@@ -1,28 +1,37 @@
-What happens when you initialize a repository? Why do you need to do that?
+Q: What happens when you initialize a repository? Why do you need to do that?
 
-When 'git init' is run in a directory, all meta data files of a
-repository are created. This is needed so that subsequent commits
-can be performed successfully. 
-
-
-
-
-How is staging area different from working directory and repository?
-What value do you think it offers?
-
-Staging area can be used to temporarily group together the changes that
-will form a part of commit. Changes saved in staging area are not yet
-part of a commit and hence can be changed. Also, staging area allows
-changes to several files to be grouped together and tied to a common
-description of the change.
+A: When 'git init' is run in a directory, all meta data files of a
+   repository are created. This is needed so that subsequent commits
+   can be performed successfully. 
 
 
 
-How can you use the staging area to make sure you have one commit per logical change?
 
-Inspect the changes to ensure that all changes are related to the logical change and
-there are no changes that not related to the logical change. git diff --stage can
-help.
+Q: How is staging area different from working directory and repository?
+   What value do you think it offers?
+
+A: Staging area can be used to temporarily group together the changes that
+   will form a part of commit. Changes saved in staging area are not yet
+   part of a commit and hence can be changed. Also, staging area allows
+   changes to several files to be grouped together and tied to a common
+   description of the change.
+
+
+
+Q: How can you use the staging area to make sure you have one commit per 
+   logical change?
+
+A: 1. Do aa git diff to identify the changes between working directory and
+      staging area find all the differences between them
+   2. If a file contains both changes related to the logical change and changes
+      unrelated to logical change, modify the file to ensure that only changes
+      related to the logical change remain. Using git diff, verify that the
+      differences between the working directory and staging area for this file
+      is according to the expectations.
+   3. Add all files containing no changes that are unrelated to the logical 
+      change that you are making to the staging area.
+   4. Do a "git diff --staged to confirm that the changes between the 
+      repository and the staging area belong to the same logical change.
 
 
 
@@ -33,6 +42,24 @@ history organized? How would branches help?
 
 
 How do the diagrams help you visualize the branch structure?
-Helps in identifying which changes are common between two branches and which changes
-occur in only one of them.
+Helps in identifying which changes are common between two branches and which 
+changes occur in only one of them.
+
+
+
+
+
+
+What is the result of merging two branches together? Why do we represent it
+in the diagram the way we do?
+
+
+
+
+What are the pros and cons of Git's automatic merging vs always doing
+merges manually?
+
+
+
+
 
